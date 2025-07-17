@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基礎編 -2-</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="mainVisual">
+        <h1 class="mainViusal__title">JavaScript勉強会<br><span class="mainViusal__subTitle"> - 基礎編 2 - </span></h1>
+    </section>
+
+    <div class="inner">
+    <section class="practice -01">
+        <h2 class="sectionTitle">問題6. letの使い方を学びましょう</h2>
+        <p class="sectionText">letを用いて<span class="textRed">変数num1</span>に数字の「5」を代入して下さい。</p>
+        <p class="sectionText">開発者ツールを開き、変数num1をコンソールログで出力してください。<br>下記画像のように<span class="textRed">5</span>と表示されていたらOK!</p>
+        <img class="sectionImg" src="imgs/pic_06.png" alt="変数num1">
+    </section>
+    <hr class="sectionBorder">
+    <section class="practice -02">
+        <h2 class="sectionTitle">問題7. 変数num1に数字を「再代入」してみましょう。</h2>
+        <p class="sectionText">問題6で定義した<span class="textRed">変数num1</span>に数字の「15」を再代入して下さい。</p>
+        <p class="sectionText">開発者ツールを開き、変数num1をコンソールログで出力してください。<br>下記画像のように<span class="textRed">15</span>と表示されていたらOK!</p>
+        <img class="sectionImg" src="imgs/pic_07.png" alt="変数num1 再代入">
+    </section>
+    <hr class="sectionBorder">
+    <section class="practice -03">
+        <h2 class="sectionTitle">問題8. constの使い方を学びましょう</h2>
+        <p class="sectionText">constを用いて<span class="textRed">定数apple</span>に文字の「りんご」代入して下さい。</p>
+        <p class="sectionText">開発者ツールを開き、定数appleをコンソールログで出力してください。<br>下記画像のように<span class="textRed">りんご</span>と表示されていたらOK!</p>
+        <img class="sectionImg" src="imgs/pic_08.png" alt="定数apple">
+    </section>
+    <hr class="sectionBorder">
+    <section class="practice -09">
+        <h2 class="sectionTitle">問題9. 配列の使い方を学びましょう</h2>
+        <p class="sectionText">constを用いて<span class="textRed">定数fruits</span>に'apple''banana''orange'の3つの文字列を含む<span class="textRed">配列</span>を代入して下さい。</p>
+        <p class="sectionText">開発者ツールを開き、定数fruitsをコンソールログで出力してください。<br>下記画像のように<span class="textRed">['apple','banana','orange']</span>と表示されていたらOK!</p>
+        <img class="sectionImg" src="imgs/pic_09.png" alt="配列fruits">
+    </section>
+    <hr class="sectionBorder">
+    <section class="practice -10">
+        <h2 class="sectionTitle">問題10. 配列の取り出し方を学びましょう</h2>
+        <p class="sectionText">問題9で定義したfruitsの中から<span class="textRed">orange</span>を取り出してみましょう。</p>
+        <p class="sectionText">開発者ツールを開き、コンソールに "orange" と表示されるように出力してください。<br>下記画像のように<span class="textRed">orange</span>と表示されていたらOK!</p>
+        <p class="sectionText">※ヒント 再度何かを定義する必要はありません。<br>コンソールログで<span class="textRed">fruits</span>を出力する書き方を少し変えるだけです。</p>
+        <img class="sectionImg" src="imgs/pic_10.png" alt="配列fruitsからorangeを取り出し">
+    </section>
+    <hr class="sectionBorder">
+
+    <section class="practice">
+        <h2 class="sectionTitle">選んだ商品の合計金額を表示</h2>
+        <p class="totalPrice">合計金額：<span id="js-total-text">0</span>円</p>
+        <button onclick="addToTotal(200)" class="totalBtn">ハンバーガー(200円)</button>
+        <button onclick="addToTotal(150)" class="totalBtn">フライドポテト(150円)</button>
+        <button onclick="addToTotal(120)" class="totalBtn">コーラ(120円)</button>
+    </section>
+    <hr class="sectionBorder">
+
+    
+
+    <section class="column">
+        <h2 class="columnTitle">コラム2</h2>
+        <p class="column__subTitle">ライブラリ、フレームワーク</p>
+        <p class="columnText"><strong>ライブラリ</strong>や<strong>フレームワーク</strong>という言葉を聞いたことがあるかもしれません。</p>
+        <p class="columnText">簡単にいうとライブラリとフレームワークはコードを簡単かつ効率的に書くための<strong>部品の集まり</strong>のようなものです。</p>
+        <p class="columnText">☆<span class="textRed">ライブラリ</span>とは特定の機能を提供するコードの集まりで、開発者が使いたい時に使うものです。
+            <br>JSの主なライブラリは<span class="textRed -bold">jQuery</span>や<span class="textRed -bold">React</span>など。</p>
+        <p class="columnText -mb30">主導権は<strong>開発者</strong>にあり、開発者が使いたい時に使うものです。好きな時に使うので<strong>自由度は高いです。</strong></p>
+
+        <p class="columnText">☆対して<span class="textRed">フレームワーク</span>はアプリの構造全体を定義し、開発者はその枠組みの中でコードを書く必要があります。</p>
+        <p class="columnText">主導権は<strong>フレームワーク側</strong>にあると言えるでしょう。構造に従う必要があるので<strong>自由度は低いです。</strong></p>
+        <p class="columnText -mb50">JSの主なフレームワークは<span class="textRed -bold">Next.js(Reactのフレームワーク)</span>や<span class="textRed -bold">Vue.js</span>、<span class="textRed -bold">Angular.js</span>など。</p>
+        <p class="columnText">最近のアプリ開発のトレンドはこのライブラリやフレームワークを使って書くことが主流になってきています。<br>また、Webサイト制作でもこれらの技術を取り入れる所が徐々に増えてきている印象です。</p>
+        <p class="columnText">なぜ、ライブラリやフレームワークを使うことがトレンドになっているのか？<br>圧倒的に効率的だからです。</p>
+        <p class="columnText">素のJavaScript(Vanila Js)で書くと、例えば10~20行ほどかかるところをライブラリを使うとほんの数行で済むことがあります。</p>
+        <p class="columnText -mb50">今まで長いコードを書いていたのが、より早い時間で実装でき、さらに簡潔であるがゆえにミスも数くなくなります。</p>
+        <h3 class="column__subTitle"><span class="textRed -bold">Next.js(React)</span>が首位を走る</h3>
+        <p class="columnText">世界的に見てもJSのライブラリであるReactをさらに使いやすくしたフレームワークのNext.js(ちょっとややこしいですが・・・)がフロントエンドのシェアトップを走っています。<br>
+        <strong>NetFlix</strong>や<strong>GitHub</strong>、国内でいうと<strong>Abema</strong>もNext.jsを使っています。ちなみに<strong>React</strong>を開発したのは<strong>Meta(旧Facebook)</strong>でFacebookはReactで作られています。
+        <p class="columnText -mb50">Web制作の現場でもNext.jsとバックエンドに<strong>Micro CMS</strong>など<strong>ヘッドレスCMS</strong>を採用する企業が増えてきています。</p>
+        </p>
+        <h3 class="column__subTitle"><span class="textRed -bold">素のJavaScriptを学ぶ意義</h3>
+        <p class="columnText">そんなに便利ならライブラリやフレームワークを最初から学んで使えばいいんじゃないの？と思われるかもしれません。</p>
+        <p class="columnText">実際、会社によっては入社してからいきなりReactやNext.jsから研修をして教育する会社もありますし、そのまま素のJSを学ぶことなく何年もReactやNext.jsを使い続けるエンジニアもいます。</p>
+        <p class="columnText">しかし、これらのライブラリやフレームワークは結局はJSで実際に<span class="textRed">本番環境で実行される際にJSにコンパイル</span>されます。</p>
+        <p class="columnText">便利な反面、JSの基礎がない人がReactやVue.jsから始めると途中で壁にぶつかるというのはよく聞きます。また、エラーが起こった時などはJSの知識がないと中々解決できません。</p>
+        <p class="columnText">なのでReactを学ぶ人も結局、壁にぶつかって素のJSの学習をすることになるのです。</p>
+        <p class="columnText">今後ReactやNext.jsを使う予定がなくても世の中の流れが、これらのスキルを使わざるを得ないようになることも十分考えられます<br>(現に求人を見ると素のJSの需要は減り、ReactやNext.jsの需要が増え続けています)</p>
+        <p class="columnText">今の会社でもライブラリやフレームワークが導入されることもあり得るので、その時にJSの基礎があるかないかで仕事の仕方が大きく変わってくるかもしれません。そういう意味でも素のJSの仕組みはしっかりと理解しておいた方が良いと思います。</p>
+    </section>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
