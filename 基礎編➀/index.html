@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS基礎編</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="mainVisual">
+        <h1 class="mainViusal__title">JavaScript勉強会<br><span class="mainViusal__subTitle"> - 基礎編 ➀ - </span></h1>
+    </section>
+
+    <div class="inner">
+    <section class="practice -01">
+        <h2 class="sectionTitle">問題1. JavaScriptを利用できる環境を整えましょう。</h2>
+        <p class="sectionText">現在このファイルでは、htmlとCSSが読み込まれていますが、JavaScript（以下、JS）のファイルが読み込まれていません。<br>JSを使えるようにするために、<span class="textRed">[js]ディレクトリ</span>配下にJSのファイルを作成してください。</p>
+        <p class="sectionText">※ファイル名は何でもOK。<br>jsファイルが読み込まれているか確認する方法は、開発者ツールを開き右上にある<span class="textRed">「Network」</span>タブをクリック<br>→「JS」のタグをクリック→リロードして作成されたjSファイルが表示<br>→Status Codeが<span class="textRed">「200」</span><span class="textRed">「304」</span>や（緑の丸）になっていたらOK!!</p>
+        <img class="sectionImg" src="/imgs/pic_01.png" alt="JSファイル動作確認">
+        <img class="sectionImg -second" src="/imgs/pic_01_02.png" alt="JSファイル動作確認">
+    </section>
+    <hr class="sectionBorder">
+
+    <section class="practice -02">
+        <h2 class="sectionTitle">問題2. console.logを表示しましょう。</h2>
+        <p class="sectionText">JavaScriptでは確認やエラーの追及のために(デバッグ)、<span class="textRed">console.log</span>を使います(重要)</p>
+        <p class="sectionText">ここではconsole.logに<span class="textRed">「JavaScript勉強中」</span>と記述し、開発者ツールで表示してください。</p>
+        <p class="sectionText">開発者ツールを開き右上にある<span class="textRed">「Console」</span>タブをクリック<br><span class="textRed">JavaScript勉強中</span>と表示されていたらOK!!</p>
+        <img class="sectionImg" src="/imgs/pic_02.png" alt="console.log確認">
+    </section>
+    <hr class="sectionBorder">
+
+    <section class="practice -03">
+        <h2 class="sectionTitle">問題3. alertを出してみましょう</h2>
+        <p class="sectionText">ページを訪れる、リロードする、ボタンを押した時などにウィンドウの上辺りに表示されるのが<span class="textRed">alert</span>です。</p>
+        <p class="sectionText">ここではページを開いた時に「JavaScript勉強中!!」というalertが表示されるようにしましょう。</p>
+        <p class="sectionText">下記のようになったらOK！</p>
+        <img class="sectionImg" src="/imgs/pic_03.png" alt="alert確認">
+    </section>
+    <hr class="sectionBorder">
+
+    <section class="practice -04">
+        <h2 class="sectionTitle">問題4. confirmを出してみましょう。</h2>
+        <p class="sectionText">alertと似ていますが、サイト訪問時などに「OK」「キャンセル」の2択を迫れるのが<span class="textRed">confirm</span>です。</p>
+        <p class="sectionText">ここではページを開いた時に「JavaScriptの勉強を始めます。よろしいですか？」という文言が表示されるようにしましょう。</p>
+        <p class="sectionText">※問題3のalertのコードをそのままにして記述すると、ダブって出るので、問3のコードはコメントアウトしてください。</p>
+        <p class="sectionText">下記のようになったらOK！</p>
+        <img class="sectionImg" src="/imgs/pic_04.png" alt="confirm確認">
+    </section>
+    <hr class="sectionBorder">
+
+    <section class="practice -05">
+        <h2 class="sectionTitle">問題5. ボタンを押したらconfirmが出るようにしましょう。</h2>
+        <p class="sectionText">下記の<span class="textRed">「JS学習スタート」</span>ボタンを押したら問4でやったconfrimで、<br>「JavaScriptの勉強を始めます。よろしいですか？」という文言が表示されるようにしましょう。</p>
+        <p class="sectionText">上記の4問に比べると難易度が上がる問題です。少し難しいですがチェレンジしてみてください。</p>
+        <p class="sectionText">※ヒント ➀ボタンの要素を取得します(buttonタグのidを活用)、➁その要素を定義します(定数) ➂定数にイベント発生時(クリックした時)の処理を記述します。</p>
+        <button class="startButton" id="startButton">JS学習スタート</button>
+        <p class="sectionText">ボタンを押して下記のようになったらOK！</p>
+        <img class="sectionImg" src="/imgs/pic_05.png" alt="confirm確認">
+    </section>
+    <hr class="sectionBorder">
+
+    <section class="column">
+        <h2 class="columnTitle">コラム</h2>
+        <p class="column__subTitle">Web制作で抑えておいた方がいいJavaScriptの知識</p>
+        <p class="columnText">JavaScriptの機能は多岐に渡りますが、Web制作(HP・LP作成)で使うJSはそこまで多くありません(最初は多く見えますが・・・)</p>
+        <p class="columnText">主には下記の用途でJSを使うことが多いかと思います。</p>
+        <ul class="columnList">
+            <li class="columnList__item">ハンバーガーメニュー</li>
+            <li class="columnList__item">モーダルウィンドウ</li>
+            <li class="columnList__item">アコーデイオン</li>
+            <li class="columnList__item">スライダー</li>
+            <li class="columnList__item">タブ切り替え</li>
+            <li class="columnList__item">お問い合わせフォームのバリデーション</li>
+            <li class="columnList__item">その他様々なアニメーション</li>
+        </ul>
+        <p class="columnText">これら複雑なものも分解していくとやっていることは単純です。</p>
+        <p class="columnText">要素を分解していって小さなところから、どのようにJSが動作しているかを学んでいくと原理が理解できてくるようになります。</p>
+        <p class="columnText">以下のリストはWeb制作におけるJSを理解して使っていくことにおいて必要なことです。<br>どれぐらい把握して、理解しているかをチェックしてみてください。<br>
+        もし現在、全然理解できなくても大丈夫です。<br>学習を続けていけば腹落ちする時が来るのでコツコツと継続していってください。</p>
+        <ul class="columnList -second">
+            <li class="columnList__item">デバッグ(エラー解決)</li>
+            <li class="columnList__item">変数・定数がわかる</li>
+            <li class="columnList__item">真偽値(ブール値)がわかる</li>
+            <li class="columnList__item">配列がわかる、書ける(操作できる)</li>
+            <li class="columnList__item">var let const の違いがわかる</li>
+            <li class="columnList__item">関数と引数がわかる(読める・書ける)</li>
+             <li class="columnList__item">戻り値(返り値)がわかる(読める・書ける)</li>
+            <li class="columnList__item">イベントハンドラ(クリック・マウスオーバーなど)がわかる、使える</li>
+            <li class="columnList__item">DOMの意味がわかる、基本操作ができる</li>
+            <li class="columnList__item">条件分岐がわかる、書ける</li>
+            <li class="columnList__item">繰り返し文(ループ)がわかる、書ける</li>
+            <li class="columnList__item">オブジェクトの概念が理解できる</li>
+            <li class="columnList__item">非同期通信が理解できる、使える(中級)</li>
+            <li class="columnList__item">APIが理解できる、使える(中級)</li>
+        </ul>
+    </section>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
