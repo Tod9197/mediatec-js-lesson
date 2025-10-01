@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New York</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- splide読み込み -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+/>
+</head>
+
+<!-- ヘッダー -->
+<body>
+<header class="header">
+    <div class="header__inner">
+    <a class="header__logo" href="/">New York</a>
+    <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+    </div>
+    <nav class="gnav" id="js-gnav">
+    <ul class="gnav__list">
+        <li class="gnav__listItem"><a href="#about" class="gnav__link">About</a></li>
+        <li class="gnav__listItem"><a href="#sightseeing" class="gnav__link">Sightseeing</a></li>
+        <li class="gnav__listItem"><a href="#food" class="gnav__link">Food</a></li>
+        <li class="gnav__listItem"><a href="#culture" class="gnav__link">Culture & History</a></li>
+        <li class="gnav__listItem"><a href="#contact" class="gnav__link">Contact</a></li>
+    </ul>
+    </nav>
+    </div>
+</header>
+<!-- ヘッダーここまで -->
+
+<!-- メインビジュアル -->
+<section class="mainVisual">
+    <div class="mainVisual__titleWrap">
+        <h1 class="mainVisual__title">Welcome to <span>New York</span></h1>
+    </div>
+    <!-- 画像切替 -->
+    <div class="splide" role="group">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="images/mv/mv-02.jpg" class="mainVisual__img" alt="マンハッタンの街並み">
+                </li>
+                <li class="splide__slide">
+                    <img src="images/mv/mv-01.jpg" class="mainVisual__img" alt="タイムズスクエア">
+                </li>
+                <li class="splide__slide">
+                    <img src="images/mv/mv-03.jpg" class="mainVisual__img" alt="夕方のタイムズスクエア">
+                </li>
+                <li class="splide__slide">
+                    <img src="images/mv/mv-04.jpg" class="mainVisual__img" alt="ニューヨークのタクシー">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 画像切替ここまで-->
+</section>
+<!-- メインビジュアルここまで -->
+
+
+    <!-- JS読み込み -->
+    <script src="js/script.js"></script>
+    <!-- splide読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</body>
+<!-- 写経ここまで -->
+</html>
